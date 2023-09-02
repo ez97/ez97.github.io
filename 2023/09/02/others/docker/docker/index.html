@@ -130,14 +130,25 @@
 									</a>
 									
 							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										docker
+									</a>
+									
+							<ul>
 								<li class="file active">
-									<a href="/2023/09/02/others/docker/">
+									<a href="/2023/09/02/others/docker/docker/">
                      
 										    docker
                      
 									</a>
 								</li>
 								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
 							</ul>
 			
 								</li>
@@ -195,7 +206,7 @@ lab，当时完全看不懂runoob上那种抽象的描述</p>
 <p>试图做个总结</p>
 <hr>
 <h2 id="容器技术和虚拟机">容器技术和虚拟机</h2>
-<p><img src="/docker/docker1.png"></p>
+<p><img src="/2023/09/02/others/docker/docker/docker1.png"></p>
 <p>docker相比虚拟机技术更加轻量化，原因在于共享了操作系统内核，从而节省了资源消耗</p>
 <p>那么如何实现的呢？</p>
 <p>从应用程序的角度来看，由于操作系统提供的假象，其会始终认为自己是唯一且不间断运行的一个进程。程序是计算和系统调用组成的状态机，操作系统负责（在程序需要的时候）将运行环境里的信息传递到程序中</p>
@@ -215,6 +226,7 @@ engine来管理容器和OS之间的交互，我在这里理解为，将容器的
 <p>（由此可见，AUFS似乎还是更适合作为临时的测试性平台使用？越修改越占空间）</p>
 <p>最后吐槽一下，网上一些教程把image比作class，把container比作instance，实在是莫名其妙……罗里吧嗦一大堆把我说晕了，结果后来发现只是说了最浅层的一些东西（container在创建之初和image是“一样"的）</p>
 <h2 id="clientserver">Client＆Server</h2>
+<p><img src="/2023/09/02/others/docker/docker/docker2.png"></p>
 <p>docker的实现架构，非容器技术必须的</p>
 <p>没什么意思，略</p>
 <hr>

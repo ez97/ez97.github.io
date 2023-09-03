@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	
+	<!-- title -->
+	
+	<title>
+	
+		stl | 
+	 
+	Ever97&#39;s Blog
+	</title>
+	
+	<!-- keywords,description -->
+	 
+
+	<!-- favicon -->
+	
+	<link rel="shortcut icon" href="/favicon2.ico">
+	
+
+
+	<!-- search -->
+	<script>
+		var searchEngine = "https://www.google.com/search?q=";
+		if(typeof searchEngine == "undefined" || searchEngine == null || searchEngine == ""){
+			searchEngine = "https://www.google.com/search?q=";
+		}
+		var homeHost = "ez97.github.io";
+		if(typeof homeHost == "undefined" || homeHost == null || homeHost == ""){
+			homeHost = window.location.host;
+		}
+	</script>
+
+
+	
+<link rel="stylesheet" href="/css/main.css">
+
+	
+<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/darcula.min.css">
+
+	
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+
+
+	
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+
+	
+<script src="/js/main.js"></script>
+
+
+	
+		
+<script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
+
+		
+<script src="https://cdn.jsdelivr.net/npm/valine@v1.5.1/dist/Valine.min.js"></script>
+
+	
+	
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+	<header id="header">
+    <a id="title" href="/" class="logo">Ever97's Blog</a>
+
+	<ul id="menu">
+    
+      <li class="menu-item">
+        <a href="/about" class="menu-item-link">ABOUT</a>
+      </li>
+    
+
+    
+      <li class="menu-item">
+        <a href="/tags" class="menu-item-link">标签</a>
+      </li>
+    
+
+    
+      <li class="menu-item">
+        <a href="/categories" class="menu-item-link">分类</a>
+      </li>
+    
+
+    
+  
+    
+      <li class="menu-item">
+        <a href='https://github.com/ez97' class="menu-item-link" target="_blank">
+          <i class="fa fa-github fa-2x"></i>
+        </a>
+      </li>
+    
+	</ul>
+</header>
+
+	
+<div id="sidebar">
+	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
+	
+	<div id="site-toc">
+		<input id="search-input" class="search-input" type="search" placeholder="按回车全站搜索">
+		<div id="tree">
+			
+
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										c++
+									</a>
+									
+							<ul>
+								<li class="file active">
+									<a href="/2023/09/03/c++/stl/">
+                     
+										    stl
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										others
+									</a>
+									
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										docker
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2023/09/02/others/docker/docker/">
+                     
+										    docker
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2023/09/02/test/">
+                     
+										    test
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+		</div>
+	</div>
+</div>
+
+	<!-- 引入正文 -->
+	<div id="content">
+		<h1 id="article-title">
+	stl
+</h1>
+
+<!-- meta -->
+<div class="article-meta">
+	
+
+	<span>Ever97</span>
+	<span>2023-09-03 10:39:01</span>
+
+  <div id="article-categories">
+    
+		  <span>Categories：</span>
+      
+    
+
+    
+		    <span>Tags：</span>
+        
+    
+  </div>
+
+</div>
+
+<!-- content -->
+<div id="article-content">
+	<html><head></head><body><p>刷算法前复习一下常用STL的使用方法</p>
+<p>做题还是效率优先，奇技淫巧等我medium随便过了再考虑……</p>
+<p><del>不能再沉迷造轮子了</del></p>
+<h1 id="iterators">Iterators</h1>
+<p>C++的一个设计思路是，将container和algorithm分开设计，然后用iterator充当算法操纵容器的中介</p>
+<p>从功能表现上，迭代器类似于指针，拥有指针的引用（reference）和解引用（deference）能力</p>
+<p>相较于原生指针（native
+pointer），包装后迭代器更加安全，解决了内存漏洞问题（写循环的时候不会再因为看错一个数字就触发了segmentation
+fault了）</p>
+<p>迭代器可分为四种：</p>
+<figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">container_name::iterator name;</span><br><span class="line">container_name::const_iterator name;</span><br><span class="line">container_name::reverse_iterator name;</span><br><span class="line">container_name::const_reverse_iterator name;</span><br></pre></td></tr></tbody></table></figure>
+<p>所有迭代器都有的功能有:</p>
+<ul>
+<li>类似于指针解引用，<code>*iterator</code>表示迭代器指向的元素（const类型无法修改）</li>
+<li>iterator++代表指向“下一个”元素，区别在于正向是后一个，反向（reverse）是前一个</li>
+</ul>
+<p>不过在学习数据结构时我们知道，有一些数据结构，是不支持随机访问的，对其中的数据存取会受到限制（如list），这一点也体现在了迭代器上，根据容许程度可能还有以下功能：</p>
+<ul>
+<li>对于双向迭代器：<code>p--</code>也是有定义的</li>
+<li>对于随机访问迭代器：<code>p+=i</code>，<code>p+i</code>，<code>p[i]</code>，<code>p1&lt;p2</code>，<code>p2-p1</code>都是有意义的</li>
+</ul>
+<p>在常用的容器里，</p>
+<p>拥有随机访问迭代器的容器有：vector、deque</p>
+<p>拥有双向迭代器的容器有：list、set、map</p>
+<p>不支持迭代器的容器有：stack、queue、priority_queue</p>
+<h1 id="containers">Containers</h1>
+<p>常用的容器操作有：</p>
+<figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">c1 = c2;</span><br><span class="line">c1 = {a, b, c...};</span><br><span class="line">a.<span class="built_in">swap</span>(b);<span class="built_in">swap</span>(a, b);</span><br><span class="line"></span><br><span class="line">c.<span class="built_in">begin</span>();<span class="comment">//指向首元素</span></span><br><span class="line">c.<span class="built_in">end</span>();<span class="comment">//指向容器的后面（尾元素的后面，解引用未定义）</span></span><br><span class="line">c.<span class="built_in">cbegin</span>();c.<span class="built_in">cend</span>();<span class="comment">//const_</span></span><br><span class="line">c.<span class="built_in">rbegin</span>();c.<span class="built_in">rend</span>();<span class="comment">//反向迭代，注意是reverse_iterator</span></span><br><span class="line"></span><br><span class="line">c.<span class="built_in">size</span>();<span class="comment">//元素个数</span></span><br><span class="line">c.<span class="built_in">max_size</span>();<span class="comment">//最大元素个数，默认是一个非常大的整数</span></span><br><span class="line">c.<span class="built_in">empty</span>();<span class="comment">//是否为空</span></span><br><span class="line"></span><br><span class="line">c.<span class="built_in">insert</span>(iterator, value);<span class="comment">//在迭代器指定位置插入值，其余元素顺移</span></span><br><span class="line">c.<span class="built_in">emplace</span>(inits);<span class="comment">//inits为构造参数</span></span><br><span class="line">c.<span class="built_in">erase</span>(iter1, iter2);<span class="comment">//删除元素</span></span><br><span class="line">c.<span class="built_in">clear</span>();<span class="comment">//全删除，返回void</span></span><br></pre></td></tr></tbody></table></figure>
+<h2 id="vector">1.vector</h2>
+<p><code>std::vector&lt;type&gt; name</code></p>
+<p>实现方式为动态数组，在内存中连续存储，提供快速随机访问能力</p>
+<p>当向量元素大于容器容量时自动扩充，可用<code>c.capacity()</code>进行查询</p>
+<h2 id="queue">2.queue</h2>
+<p><code>std::queue&lt;type&gt; name</code></p>
+<p>queue的实现依赖其底层容器的选择，默认为deque，也可以选择list</p>
+<p>deque为FIFO队列，存储方式为动态分配的内存块，优势在于在序列头部/尾部快速添加、删除元素(O(1))，缺点在于队列中删除/插入元素需要移动整块存储空间</p>
+<p>list为双向链表，存储方式为分布节点，优势在于能在已知位置快速插入、删除元素(O(1))，缺点在于随机访问需要顺序遍历</p>
+<h2 id="priority_queue">3.priority_queue</h2>
+<p><code>std::priority_queue&lt;type&gt; name</code></p>
+<p>优先队列，在queue的基础上增加了一个比较函数，使最大元素位于前列（First
+in， Largest out）</p>
+<p>实现方式为heap</p>
+<h2 id="pair">4.pair</h2>
+<p><code>std::pair &lt;type1, type2&gt; name</code></p>
+<p>键值对，通过<code>p.first</code>和<code>p.second</code>来访问两个元素</p>
+<p>实现方式为class</p>
+<h2 id="map">5.map</h2>
+<p><code>std::map&lt;key_type, value_type&gt; name</code></p>
+<p>有序关联容器，元素默认按value升序排序，可以通过<code>map1.insert(pair1&lt;type1, type2&gt;)</code>来将pair插入</p>
+<p>实现方式为红黑树，查找、插入、删除的时间复杂度均为O(nlogn)</p>
+<h2 id="set">6.set</h2>
+<p><code>std::set&lt;type&gt; name</code></p>
+<p>有序唯一关联容器，元素默认升序排序，容器中所有元素值唯一</p>
+<p>实现方式为红黑树</p>
+<h2 id="stack">7.stack</h2>
+<p><code>std::stack&lt;type&gt; values</code></p>
+<p>栈，后进先出数据结构，默认基础容器为deque</p>
+<p>一般常用<code>s.push(val)</code>和<code>s.pop()</code>操作</p>
+<h1 id="algorithms">Algorithms</h1>
+<p>待补</p>
+</body></html>
+</div>
+
+<!-- post-guide -->
+
+    <div class="post-guide">
+        <div class="item left">
+            
+        </div>
+        <div class="item right">
+            
+              <a href="/2023/09/02/others/docker/docker/">
+                docker
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </a>
+            
+        </div>
+    </div>
+
+
+<!-- comment - giscus -->
+
+
+<!-- comment - valine -->
+
+
+<script>
+	
+	
+</script>
+	</div>
+	<div id="footer">
+	<p>
+	©<span id="footerYear-start">2023</span>-<span id="footerYear-end"></span>
+	<a href="/">Ever97</a> 
+	
+	
+	<br>
+	Theme <a href="//github.com/wujun234/hexo-theme-tree" target="_blank">Tree</a>
+	by <a href="//github.com/wujun234" target="_blank">WuJun</a>
+	Powered by <a href="//hexo.io" target="_blank">Hexo</a>
+	</p>
+</div>
+
+
+<script type="text/javascript">
+	document.getElementById('footerYear-end').innerHTML = new Date().getFullYear() + '';
+</script>
+
+	<button id="totop-toggle" class="toggle"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
+</body>
+</html>
